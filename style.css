@@ -104,6 +104,15 @@ button{
     cursor: pointer;
 }
 
+.plus-icon{
+    transition: transform 0.4s ease-in-out
+}
+
+.minus-icon{
+    transition: transform 0.1s ease-in
+}
+
+
 .button-container{
     display: flex;
     flex-direction: column;
@@ -138,6 +147,28 @@ h2:hover{
     color: var(--purple);
     cursor: pointer;
   }
+
+.plus-icon:hover{
+    transform: scale(1.15)
+}
+
+.minus-icon:hover{
+    transform: scale(1.15)
+}
+
+.wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s;
+}
+
+.wrapper > div{
+    overflow: hidden;
+}
+
+.show{
+    grid-template-rows: 1fr;
+}
 
 @media screen and (min-width: 48rem) {
     body{

@@ -9,11 +9,11 @@
             const button = e.currentTarget;
             const value = button.getAttribute("data-value");
             console.log(value)
-            const answer = document.getElementById(`answer${value}`);
-            console.log(answer)
+            const wrapper = document.getElementById(`wrapper${value}`);
+            console.log(wrapper)
             const plusIcon = document.getElementById(`plus-icon${value}`);
             const minusIcon = document.getElementById(`minus-icon${value}`);
-            answer.classList.toggle("hide");
+            wrapper.classList.toggle("show");
             plusIcon.classList.toggle("hide");
             minusIcon.classList.toggle("hide");
         });
